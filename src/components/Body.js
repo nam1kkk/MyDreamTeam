@@ -16,6 +16,7 @@ const Body = () => {
   return (
     <main style={styles.body}>
       <Card name="Vladislav Namofilov" position="Team Lead" photo="/vladislavNamofilov.png" />
+      <Card name="Yulia Korolova" position="Frontend developer" photo="/yuliaKorolova.png" />
     </main>
   );
 };
