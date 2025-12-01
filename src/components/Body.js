@@ -12,12 +12,13 @@ const Card = ({ name, position, photo }) => {
   );
 };
 
+
 const Body = () => {
   return (
     <main style={styles.body}>
       <Card name="Vladislav Namofilov" position="Team Lead" photo="/vladislavNamofilov.png" />
       <Card name="Dmytro Pidkostelnyi" position="Back-end Developer" photo="/dmytroPidkostelnyi.png" />
-
+      <Card name="Myshchatyn Mariia" position="UI/UX desiner" photo="/myshchatymMariia.png" />
     </main>
   );
 };
