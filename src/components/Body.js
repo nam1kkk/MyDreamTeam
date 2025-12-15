@@ -20,6 +20,8 @@ const Body = () => {
       <Card name="Yulia Korolova" position="Frontend developer" photo="/yuliaKorolova.png" />
       <Card name="Dmytro Pidkostelnyi" position="Back-end Developer" photo="/dmytroPidkostelnyi.png" />
       <Card name="Myshchatyn Mariia" position="UI/UX desiner" photo="/myshchatymMariia.png" />
+      <Card name="Dvorytska Anastasiia" position="Project Manager" photo="/anastasiiadvorytska.png" />
+
     </main>
   );
 };
