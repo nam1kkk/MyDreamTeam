@@ -1,0 +1,34 @@
+name: CI
+
+permissions:
+  contents: write
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fix git safe directory
+        run: git config --global --add safe.directory '*'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Run CI command
+        run: npm ci
+
+      - name: Run the tests
+        run: npm test -- --watchAll=false
+
+      - name: Build
+        run: npm run build

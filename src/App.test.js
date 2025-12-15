@@ -1,8 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders dream team heading', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  // Ми змінили пошук: замість "learn react" шукаємо твій заголовок
+  const linkElement = screen.getByText(/My dream team/i);
   expect(linkElement).toBeInTheDocument();
 });
